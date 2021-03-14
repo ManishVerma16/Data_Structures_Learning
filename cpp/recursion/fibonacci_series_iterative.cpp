@@ -17,6 +17,7 @@ int fibo(int n){
 int main()
 {
     int x;
+    cout << "Enter the number to get fibonacci series: ";
     cin>>x;
     cout << fibo(x) << endl;
     return 0;
