@@ -13,7 +13,7 @@ void countDuplicate(int arr[], int n){
     {
         h[arr[i]] += 1;
     }
-    for (int i = 0; i <arr[n-1]; i++)
+    for (int i = 0; i <=arr[n-1]; i++)
     {
         if(h[i] > 1){
 
