@@ -22,7 +22,7 @@ void duplicateElement(int arr[], int n)
             }
         }
         if(count >1)
-            cout << " Count: "<< count << " Element: "<<arr[i];
+            cout <<"Missing Element: "<<arr[i];
     }
 }
 
