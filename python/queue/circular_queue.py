@@ -14,10 +14,19 @@ class Queue:
     def size(self):
         return self.count
 
+    def resize(self, newsize):
+        old_list = self.items
+        self.items = [None]*newsize
+        i = self.front
+        for j in range(self.count):
+            self.items[j] = old_list[j]
+            i = (i+1)%len(old_list)
+        self.front = 0
+        
     def enqueue(self, value):
         if self.count == len(self.items):
-            print("Queue is Full\n")
-            # self.resize
+            # print("Queue is Full and resize \n")
+            self.resize
         else:
             i = (self.front + self.count) % len(self.items)
             self.items[i] = value
