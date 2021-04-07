@@ -17,7 +17,13 @@ class Queue:
         if self.is_empty():
             print("Queue is Empty")
         else:
-            return self.items.pop()
+            return self.items.pop(0)
+
+    def peek(self):
+        if self.is_empty():
+            print("Queue is Empty")
+        else:
+            return self.items[0]
 
     def display(self):
         print("Elements in Queue are: ",self.items)
