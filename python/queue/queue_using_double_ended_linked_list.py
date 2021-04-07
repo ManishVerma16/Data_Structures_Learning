@@ -1,3 +1,13 @@
+'''
+1. To implement queue using circular linked we need to maintain only
+one reference pointer that is rear pointer.
+
+2. Enqueue operation can be done using front end reference and Dequeue operation
+can be done using rear end reference in constant time.
+
+'''
+
+
 class Node:
     def __init__(self, value):
         self.data = value
